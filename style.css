@@ -1,0 +1,164 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161d6f;
+    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+}
+
+input{
+    padding: 0.8rem;
+    background-color: #03506f; 
+    color : white;
+    font-size: 1.2rem;
+    border: none;
+    margin-bottom: 2rem;
+    border-radius: 20px;
+    outline: none;
+    text-align: center;
+}
+
+input::placeholder{
+    color : white;
+}
+
+.main{
+    font-size: 1.2rem;
+    background-color: #03506f;
+    display: flex;
+    box-shadow: 0 5px 10px rgba(154,160,185,0,05),  0 15px 40px rgba(0, 0, 0, 0.1);;
+    width: 1200px;
+    border-radius: 20px;
+    padding: 2rem;
+
+}
+.card{
+    display: flex;
+    width: 800px;
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 10px solid #7496a7;
+    margin: 2rem;    
+}
+
+.user-info{ 
+    color: white;
+    margin-left: 2rem;
+}
+
+.user-info h2{
+    margin-top: 0;
+    font-size: 2rem;       
+}
+
+.user-info ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+}
+
+.user-info ul li{
+    padding: 0.4rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-info ul li strong{
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+.repo{
+    background-color: #7496a7;
+    color:white;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#follower{
+    margin-top: 2rem;
+    padding-right: 30px;
+    overflow-y: scroll;
+    max-height: 600px;
+    border-radius: 20px;
+}
+
+#follower::-webkit-scrollbar {
+    width: 0px;
+}
+
+#follower::-webkit-scrollbar {
+    display: block;   
+}
+
+#follower span{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;     
+}
+
+.menu{
+    width: 400px;
+    max-width: 400px;
+    margin-top: 0.5rempx;
+    display: flex;
+    background-color: #7496a7;
+    border-radius: 200px;
+    margin-bottom: 1rem;    
+}
+
+#followers-img {
+    width: 100px;
+    margin-left: 0;
+    position: relative;
+}
+
+#followers-img img{
+    width: 100px;
+    margin-top: 4px;
+    height: 100px;
+    border-radius: 200px;
+}
+
+#followers-bio{
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color : white;    
+}
+
+#followers-bio p{
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#followers-bio a{
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    font-size: 1.2rem;
+}
